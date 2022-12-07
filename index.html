@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="score">
+        <p class="score-text">SCORE</p>
+        <h1 class="score-digit">12</h1>
+      </div>
+    </div>
+
+    <!-- PICKING -->
+
+    <div class="picks hidden">
+
+      <div class="youPicked">
+        <h1>YOU PICKED</h1>
+        <div class="pickOne">
+          <img id="myImage" src="" alt="images">
+        </div>
+      </div>
+
+      <div class="winBoard hidden">
+        <h1 class="boardDisplay">YOU LOSE</h1>
+        <button id="playAgain">PLAY AGAIN</button>
+      </div>
+
+      <div class="housePicked">
+        <h1>THE HOUSE PICKED</h1>
+        <div class="pickTwo">
+          <img id="houseImage" src="" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- GAME PAD -->
+
+    <div class="pad">
+
+      <div class="paper xter xterOne">
+        <img class="xter-image" src="images/icon-paper.svg" alt="">
+      </div>
+
+      <div class="scissors xter xterSec">
+        <img class="xter-image" src="images/icon-scissors.svg" alt="">
+      </div>
+
+      <div class="rock xter xterThird">
+        <img class="xter-image" src="images/icon-rock.svg" alt="">
+      </div>
+
+    </div>
+
+    <button class="rule">
+      <h1 class="rule-text">RULES</h1>
+    </button>
+
+
+  </div>
+
+
+
+
+  <div class="game-rule">
+    <div class="rule-heading">
+      <h1>RULES</h1>
+      <button class="close-x">&times;</button>
+    </div>
+    <img src="images/image-rules.svg" alt="">
+    <h3 class="score-rule">If Your Score Reaches 15(Maximum) or 10(Minimum). The Game Score Resets To 12.</h3>
+  </div>
+
+  <div class="overlay"></div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
